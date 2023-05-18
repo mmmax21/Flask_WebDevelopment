@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--case:加载css文件-->
+    <link rel="stylesheet" href="{{url_for('static' ,filename='css/style.css') }}">
+    <!--case:加载js文件-->
+    <script src="{{url_for('static', filename = 'js/my.js')}}"></script>
+</head>
+<body>
+<!--case：加载图片文件 -->
+<img src="{{ url_for('static', filename='/images/IMG_2313.JPG')}}">
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>  <!--"title"是block的名字，"body"也是 -->
+</head>
+<body>
+我是父模板的文字
+{%block body %}   <!--为什么需要加block呢？因为子模板会有和父模板不一样的东西，都加在block里-->
+{%endblock%}
+</body>
+</html>
